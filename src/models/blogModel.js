@@ -52,12 +52,10 @@ const blogSchema = new mongoose.Schema(
       enum: ["draft", "published"],
       default: "draft",
     },
-
     isFeatured: {
       type: Boolean,
       default: false,
     },
-
     publishedAt: {
       type: Date,
     },
