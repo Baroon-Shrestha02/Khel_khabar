@@ -5,8 +5,10 @@ import {
   getBlogs,
   getOneBlog,
   updateBlog,
-} from "../controllers/blogController";
+} from "../controllers/blogController.js";
 
 const router = express.Router();
+
+router.get("/blogs/", getBlogs);
 
 export default router;
