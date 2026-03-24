@@ -1,6 +1,6 @@
 const globalErrorHandler = (err, req, res, next) => {
   // show complete error message for debugging
-  console.error("ERROR 💥", err);
+  console.error("ERROR ", err);
   // If error has no statusCode, default to 500
   const statusCode = err.statusCode || 500;
 
